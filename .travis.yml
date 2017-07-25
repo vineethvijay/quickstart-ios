@@ -42,4 +42,6 @@ before_install:
   - ruby ../info_script.rb $SAMPLE
   - cd -
 
-script: ./test.sh
+script: 
+  - open -b com.apple.iphonesimulator
+  - ./test.sh
